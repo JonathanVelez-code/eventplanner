@@ -8,6 +8,7 @@
 	$lastName = "";
 	$email = "";
 	$univerity = "";
+	$data = "";
 
     //Connect to mySQL
 	$conn = new mysqli("localhost", "AdminUser", "cop4710Data@", "EventPlanner");

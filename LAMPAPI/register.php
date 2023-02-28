@@ -3,15 +3,18 @@
 	$inData = getRequestInfo();
 	
 	//Get regester fields from clients JSON POST
-	$login = $inData["login"];
+	$username = $inData["userName"];
 	$password = $inData["password"];
 	$firstName = $inData["firstName"];
 	$lastName = $inData["lastName"];
+	$email = $inData["email"];
+	$university = $inData["university"];
+
 
 	//Connect to mySQL
-	$conn = new mysqli("localhost", "Beast", "COP4331", "CONTACT_MANAGER"); 
+	$conn = new mysqli("localhost", "AdminUser", "cop4710Data@", "EventPlanner"); 
 
-	if($login == "" || $password == "" || $firstName == "" || $lastName=="")
+	if($username == "" || $password == "" || $firstName == "" || $lastName=="" || $email = "" || $university = "")
 	{
 	  returnWithError( -1, "Null Value." );
 	  die();
@@ -24,8 +27,8 @@
 	else
 	{
 		//Find users with the regestering clients login
-		$stmt = $conn->prepare("SELECT ID FROM Users WHERE Login=?");
-		$stmt->bind_param("s", $login);
+		$stmt = $conn->prepare("SELECT userID FROM Users WHERE userName=?");
+		$stmt->bind_param("s", $username);
 		$stmt->execute();
 		$result = $stmt->get_result();
 
@@ -38,20 +41,20 @@
 		else 
 		{	
 			//Add the new user to the database
-			$stmt = $conn->prepare("INSERT into Users (FirstName,LastName,Login,Password) VALUES (?,?,?,?)");
-			$stmt->bind_param("ssss", $firstName, $lastName, $login, $password);
+			$stmt = $conn->prepare("INSERT into Users (firstName,lastName,userName,password, email, university) VALUES (?,?,?,?,?,?)");
+			$stmt->bind_param("ssssss", $firstName, $lastName, $username, $password, $email, $university);
 			$stmt->execute();
 
 			//Get the new users ID
-			$stmt = $conn->prepare("SELECT ID FROM Users WHERE Login=? AND Password =?");
-			$stmt->bind_param("ss", $login, $password);
+			$stmt = $conn->prepare("SELECT userID FROM Users WHERE userName=? AND password =?");
+			$stmt->bind_param("ss", $username, $password);
 			$stmt->execute();
 			$result = $stmt->get_result();
 			$row = $result->fetch_assoc();
-			$id = $row['ID'];
+			$userid = $row['userID'];
 
 			//Return the new users info
-			returnWithInfo($firstName, $lastName, $id);
+			returnWithInfo($firstName, $lastName, $userid);
 		}
 
 		$stmt->close();
@@ -75,9 +78,9 @@
 	
 	//Return JSON to user with the users info
 	//PARAM: $firstName, $lastName, $id from database
-	function returnWithInfo( $firstName, $lastName, $id )
+	function returnWithInfo( $firstName, $lastName, $userid )
 	{
-		$retValue = '{"id":' . $id . ',"firstName":"' . $firstName . '","lastName":"' . $lastName . '","error":""}';
+		$retValue = '{"userID":' . $userid . ',"firstName":"' . $firstName . '","lastName":"' . $lastName . '","error":""}';
 		sendResultInfoAsJson( $retValue );
 	}
 	
@@ -86,7 +89,7 @@
 	//       $errSTR - a message describing the error, mostly for debugging
 	function returnWithError($errID ,$errSTR )
 	{
-		$retValue = '{"id":"' . $errID . '","firstName":"","lastName":"","error":"' . $errSTR . '"}';
+		$retValue = '{"userID":"' . $errID . '","firstName":"","lastName":"","error":"' . $errSTR . '"}';
 		sendResultInfoAsJson( $retValue );
 	}
 	

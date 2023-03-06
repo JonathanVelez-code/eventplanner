@@ -17,13 +17,13 @@
     }
     else
 	{
-		//Search for the clients userName and password then select data from database
-		$stmt = $conn->prepare("SELECT userID,firstName,lastName,email,university FROM Users WHERE userName=? AND password=?");
-		$stmt->bind_param("ss", $inData["userName"], $inData["password"]);
+		//Search for the clients username and password then select data from database
+		$stmt = $conn->prepare("SELECT userID,firstName,lastName,email,university FROM Users WHERE username=? AND password=?");
+		$stmt->bind_param("ss", $inData["username"], $inData["password"]);
 		$stmt->execute();
 		$result = $stmt->get_result();	
 
-		//Check if the correct userName & password matches a registered user
+		//Check if the correct username & password matches a registered user
 		if( $row = $result->fetch_assoc()  )
 		{
 			//Return the JSON data

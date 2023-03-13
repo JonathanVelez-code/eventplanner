@@ -89,7 +89,7 @@
 	//       $errSTR - a message describing the error, mostly for debugging
 	function returnWithError($errID ,$errSTR )
 	{
-		$retValue = '{"id":"' . $errID . '","firstName":"","lastName":"","error":"' . $errSTR . '"}';
+		$retValue = '{"id":"' . $errID . '","error":"' . $errSTR . '"}';
 		sendResultInfoAsJson( $retValue );
 	}
 	

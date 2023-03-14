@@ -7,7 +7,6 @@
 	$name = $inData["name"];
 	$emails = $inData["emails"];
     $description = $inData["description"];
-    $admin = "admin";
 
 	//Connect to mySQL
 	$conn = new mysqli("localhost", "AdminUser", "cop4710Data@", "EventPlanner"); 
@@ -38,6 +37,7 @@
 		{
             $adminID = $row['userID'];
 
+            $i = 0;
             // checks that each member email is valid
             foreach ($emails as $value) {
                 
@@ -53,6 +53,13 @@
                     returnWithError( 0, "User does not exist");
                     die();
                 }
+                $i++;
+            }
+
+            // checks that at least 4 member emails have been input
+            if ($i < 4) {
+                returnWithError( 0, "Must enter at least 4 member emails");
+                die();
             }
 
             // We check that the emails are valid before adding 

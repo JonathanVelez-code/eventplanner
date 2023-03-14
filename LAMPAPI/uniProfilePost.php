@@ -27,7 +27,7 @@
 	}
 	else
 	{
-		//Find users with the same username
+		//Find university with same name
 		$stmt = $conn->prepare("SELECT universityID FROM Universities WHERE name=?");
 		$stmt->bind_param("s", $name);
 		$stmt->execute();
@@ -36,7 +36,7 @@
 		//Check if username is taken
 		if( $row = $result->fetch_assoc()  ) 
 		{
-			//A user with a matching username was found
+			//A uni with a matching name was found
 			returnWithError( 0, "University already exists");
 		}
 		else 

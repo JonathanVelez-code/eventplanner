@@ -13,7 +13,7 @@
 	$conn = new mysqli("localhost", "AdminUser", "cop4710Data@", "EventPlanner"); 
 
 	//check if entered data is empty.
-	if($adminEmail == "" || $name == "" || $emails == "")
+	if($adminEmail == "" || $name == "" || $emails == "" || $description == "")
 	{
 	  returnWithError( -1, "Null Value." );
 	  die();
@@ -33,11 +33,44 @@
 		$result = $stmt->get_result();
 
 
-		//Check if email is taken
+		//Check admin email exists
 		if( $row = $result->fetch_assoc()  ) 
 		{
             $adminID = $row['userID'];
 
+            // checks that each member email is valid
+            foreach ($emails as $value) {
+                
+                //Find users with the same  email
+                $stmt = $conn->prepare("SELECT userID FROM Users WHERE email=?");
+                $stmt->bind_param("s", $value);
+                $stmt->execute();
+                $result = $stmt->get_result();
+
+                // if any of the users do not exist, error
+                if( !($row = $result->fetch_assoc())  ) 
+                {
+                    returnWithError( 0, "User does not exist");
+                    die();
+                }
+            }
+
+            // We check that the emails are valid before adding 
+            // values to database
+
+            //Find users with the same username
+            $stmt = $conn->prepare("SELECT rsoID FROM RSO WHERE name=?");
+            $stmt->bind_param("s", $name);
+            $stmt->execute();
+            $result = $stmt->get_result();
+
+            //Check if RSO exists
+            if( $row = $result->fetch_assoc()  ) 
+            {
+                //An RSO with a matching name was found
+                returnWithError( 0, "RSO already exists");
+                die();
+            }
 			//Add the new rso to the database
 			$stmt = $conn->prepare("INSERT INTO RSO (adminID, name, description) VALUES (?,?,?)");
 			$stmt->bind_param("sss", $adminID, $name, $description);
@@ -56,6 +89,23 @@
 			$stmt = $conn->prepare("INSERT INTO Members (userID, rsoID, role) VALUES (?,?, 1)");
 			$stmt->bind_param("ss", $adminID, $rsoid);
 			$stmt->execute();
+
+            //adds each user as a member
+            foreach ($emails as $value) {
+
+                // get userID
+                $stmt = $conn->prepare("SELECT userID FROM Users WHERE email=?");
+                $stmt->bind_param("s", $value);
+                $stmt->execute();
+                $result = $stmt->get_result();
+                $row = $result->fetch_assoc();
+                $userID = $row['userID'];
+
+                
+                $stmt = $conn->prepare("INSERT INTO Members (userID, rsoID, role) VALUES (?,?, 0)");
+			    $stmt->bind_param("ss", $userID, $rsoid);
+			    $stmt->execute();
+            }
 
 			//Return the new RSO info
 			returnWithInfo($rsoid, $adminID, $name, $description);

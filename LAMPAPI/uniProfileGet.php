@@ -13,7 +13,7 @@
     }
     else
 	{
-		//Search for the clients username and password then select data from database
+		//Search for university
 		$stmt = $conn->prepare("SELECT name,numStudents,location, description, picturesPath FROM Universities WHERE name=?");
 		$stmt->bind_param("s", $uniName);
 		$stmt->execute();

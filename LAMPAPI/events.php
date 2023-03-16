@@ -56,7 +56,7 @@
 	//PARAM: $firstName, $lastName, $id from database
 	function returnWithInfo( $name, $date, $location, $description )
 	{
-		$retValue = '{"name":' . $name . ',"location":"' . $location . '","date":"' . $date . '","description":"' . $description . '","error":""}';
+		$retValue = '{"name":"' . $name . '","location":"' . $location . '","date":"' . $date . '","description":"' . $description . '","error":""}';
 		sendResultInfoAsJson( $retValue );
 	}
 	

@@ -31,7 +31,7 @@
         }
 
         $jsonObj = array();
-        
+
         // output all reviews
         while ($row_events = $result->fetch_assoc()) {
             
@@ -70,7 +70,7 @@
 	//Return JSON to user with the correct users info
 	function returnWithInfo( $name, $date, $ratingScale, $description )
 	{
-		$retValue = '{"name":' . $name . ',"ratingScale":"' . $ratingScale . '","date":"' . $date . '","description":"' . $description . '","error":""}';
+		$retValue = '{"name":"' . $name . '","ratingScale":"' . $ratingScale . '","date":"' . $date . '","description":"' . $description . '","error":""}';
 		sendResultInfoAsJson( $retValue );
 	}
 	

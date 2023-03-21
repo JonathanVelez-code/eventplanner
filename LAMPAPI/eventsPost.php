@@ -13,13 +13,14 @@
     $phoneNum = $inData['phoneNum'];
     $hostRSO = $inData['hostRSO'];
     $picturesPath = $inData['picturesPath'];
+	$approval = $inData['approval'];
 
 
 	//Connect to mySQL
 	$conn = new mysqli("localhost", "AdminUser", "cop4710Data@", "EventPlanner"); 
 
 	//check if entered data is empty.
-	if($name == "" || $location == "" || $category == "" || $access=="" || $dateTime == "" || $description == "" || $email == "" || $phoneNum == "" || $hostRSO == "" )
+	if($name == "" || $location == "" || $category == "" || $access=="" || $dateTime == "" || $description == "" || $email == "" || $phoneNum == "" || $hostRSO == "" || $approval == "" )
 	{
 	  returnWithError( -1, "Null Value." );
 	  die();
@@ -33,8 +34,8 @@
 	else
 	{	
 		//Add the new user to the database
-		$stmt = $conn->prepare("INSERT INTO Events (name,location,category,access,date,description,email,phoneNum,hostRSO,picturesPath) VALUES (?,?,?,?,?,?,?,?,?,?)");
-		$stmt->bind_param("ssssssssss", $name, $location, $category, $access, $dateTime, $description, $email, $phoneNum, $hostRSO, $picturesPath);
+		$stmt = $conn->prepare("INSERT INTO Events (name,location,category,access,date,description,email,phoneNum,hostRSO,picturesPath) VALUES (?,?,?,?,?,?,?,?,?,?,?)");
+		$stmt->bind_param("ssssssssssi", $name, $location, $category, $access, $dateTime, $description, $email, $phoneNum, $hostRSO, $picturesPath, $approval);
 		$stmt->execute();
 
 		//Get the new eventid from the database
@@ -46,7 +47,7 @@
 		$eventid = $row['eventID'];
 
 		//Return the new users info
-		returnWithInfo($eventid, $name, $location, $category, $access, $dateTime, $description, $email, $phoneNum, $hostRSO, $picturesPath);
+		returnWithInfo($eventid, $name, $location, $category, $access, $dateTime, $description, $email, $phoneNum, $hostRSO, $picturesPath,$approval);
 		
 
 		$stmt->close();
@@ -68,9 +69,9 @@
 	}
 	
 	//Return JSON to user with the users info
-	function returnWithInfo( $eventid, $name, $location, $category, $access, $dateTime, $description, $email, $phoneNum, $hostRSO, $picturesPath )
+	function returnWithInfo( $eventid, $name, $location, $category, $access, $dateTime, $description, $email, $phoneNum, $hostRSO, $picturesPath, $approval )
 	{
-		$retValue = '{"event id":' . $eventid . ',"Name":"' . $name . '","location":"' . $location . '","category":"' . $category . '","access":"' . $access . '","dateTime":"' . $dateTime . '","description":"' . $description . '","email":"' . $email . '","phoneNum":"' . $phoneNum . '","hostRSO":"' . $hostRSO . '","picturesPath":"' . $picturesPath . '","error":""}';
+		$retValue = '{"event id":' . $eventid . ',"Name":"' . $name . '","location":"' . $location . '","category":"' . $category . '","access":"' . $access . '","dateTime":"' . $dateTime . '","description":"' . $description . '","email":"' . $email . '","phoneNum":"' . $phoneNum . '","hostRSO":"' . $hostRSO . '","picturesPath":"' . $picturesPath . '","approvel":"' . $approval . '","error":""}';
 		sendResultInfoAsJson( $retValue );
 	}
 	

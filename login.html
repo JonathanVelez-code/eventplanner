@@ -36,8 +36,8 @@
     </div>
   </form>
 -->
-<div class="login-7sb">
-  
+ <div class="login-7sb">
+
   <div class="rectangle-1-Ce9">
   </div>
   <div class="rectangle-2-7WD">
@@ -49,14 +49,14 @@
   <p class="home-iXw">Home</p>
   <p class="login-nnh">Login</p>
   <p class="sign-up-g7P">Sign up</p>
-  <p class="forgot-my-password-9mf">forgot my password</p>
-  <p class="not-a-member-sign-up-RDP">Not a member? Sign up</p>
+  <!-- <p class="forgot-my-password-9mf">forgot my password</p>
+  <p class="not-a-member-sign-up-RDP">Not a member? Sign up</p> -->
   <img class="vector-1-hRo" src="./assets/vector-1-auj.png"/>
-  <p class="contact-QLD">Contact </p>
+  <p class="contact-QLD">Contact </p> 
   
   <div class="container">
     <img class="envelope-closed-1-Xp9" src="./assets/envelope-closed-1.png"/>
-    <form action="login.php">
+    <form id="login" method="get" action="login.php">
       <div class="row"> 
         <div class="col-75">
           <input type="text" id="user" name="username" placeholder="username..">
@@ -71,7 +71,13 @@
       <div class="row">
           
        <!-- <button type="button" id="loginButton" class="buttons" onclick="doLogin();"> Log in </button> -->
-       <input type = "button" onclick = "doLogin()" value = "Submit">
+       <input type = "button" id = "loginButton" class = "buttons" onclick = "doLogin()" value = "Submit">
+      </div>
+      <span class="error" id="loginResult"></span>
+      <div class="row">
+          
+        <!-- <button type="button" id="loginButton" class="buttons" onclick="doLogin();"> Log in </button> -->
+        <input type = "button"  id = "signButton" class = "signup" onclick = "window.location.href='index.html';" value = "Not a member? Signup">
       </div>
     </form>
   </div> 

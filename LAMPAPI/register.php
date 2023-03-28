@@ -55,6 +55,8 @@
 			$row = $result->fetch_assoc();
 			$userid = $row['userID'];
 
+			
+
 			//Return the new users info
 			returnWithInfo($firstName, $lastName, $userid, $email, $university);
 		}

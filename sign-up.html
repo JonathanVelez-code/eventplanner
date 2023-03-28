@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <script type="text/javascript" src="js/register.js"></script>
   <meta charset="utf-8" />
@@ -7,64 +8,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <title>Sign up</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi%3A400"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400"/>
-  <link rel="stylesheet" href="./css/signup.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi%3A400" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400" />
+  <link rel="stylesheet" href="./css/signup.css" />
   <title>Link CSS to HTML</title>
 </head>
-<body>
-<div class="sign-up-ERK">
-  <div class="rectangle-1-hph">
-  </div>
-  <div class="rectangle-2-cAy">
-  </div>
-  <p class="event-planner-vSZ">Event Planner</p>
-  <p class="sign-up-Pb3">Sign Up</p>
- <!--- <div class="create-account-GPw">Create Account</div> -->
-  <div class="rectangle-10-tRK">
-  </div>
-  <p class="home-Q8m">Home</p>
-  <p class="login-gc5">Login</p>
-  <p class="sign-up-NUu">Sign up</p>
-  <img class="vector-1-Sjf" src="./assets/vector-1-aQV.png"/>
-  <p class="contact-9ty">Contact </p>
 
-  <div class="container">
-    <img class="envelope-closed-1-Xp9" src="./assets/envelope-closed-1.png"/>
-    <!-- FORM -->
-    <form id="register" method="get" action="register.php">
-      <div class="row"> 
-        <div class="col-75">
-          <input type="text" id="firstName" name="firstName" placeholder="First name..">
-        </div> 
-      </div> 
-      <br><br>
-      <div class="row"> 
-        <div class="col-75">
-          <input type="text" id="lastName" name="lastName" placeholder="Last Name..">
-        </div> 
-      </div> 
-      <br><br>
-      <div class="row"> 
-        <div class="col-75">
-          <input type="text" id="email" name="email" placeholder="Email..">
-        </div> 
-      </div> 
-      <br><br>
-      <div class="row"> 
-        <div class="col-75">
-          <input type="text" id="user" name="username" placeholder="Username..">
-        </div> 
-      </div> 
-      <br><br>
-      <div class="row"> 
-        <div class="col-75">
-          <input type="text" id="pass" name="password" placeholder="Password..">
-        </div> 
-      </div> 
-      <br><br>
-      <div class="row"> 
-   
+<body>
+  <div class="sign-up-ERK">
+    <div class="rectangle-1-hph">
+    </div>
+    <div class="rectangle-2-cAy">
+    </div>
+    <p class="event-planner-vSZ">Event Planner</p>
+    <p class="sign-up-Pb3">Sign Up</p>
+    <!--- <div class="create-account-GPw">Create Account</div> -->
+    <div class="rectangle-10-tRK">
+    </div>
+    <p class="home-Q8m">Home</p>
+    <p class="login-gc5">Login</p>
+    <input type="button" id="headerButton" class="header" onclick="window.location.href='login.html';" value="Login">
+    <p class="sign-up-NUu">Sign up</p>
+    <img class="vector-1-Sjf" src="./assets/vector-1-aQV.png" />
+    <p class="contact-9ty">Contact </p>
+
+    <div class="container">
+      <img class="envelope-closed-1-Xp9" src="./assets/envelope-closed-1.png" />
+      <!-- FORM -->
+      <form id="register" method="get" action="register.php">
+        <div class="row">
+          <div class="col-75">
+            <input type="text" id="firstName" name="firstName" placeholder="First name..">
+          </div>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-75">
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name..">
+          </div>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-75">
+            <input type="text" id="email" name="email" placeholder="Email..">
+          </div>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-75">
+            <input type="text" id="user" name="username" placeholder="Username..">
+          </div>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-75">
+            <input type="text" id="pass" name="password" placeholder="Password..">
+          </div>
+        </div>
+        <br><br>
+        <div class="row">
+
           <select id="uni" name="university">
             <option value="none" selected disabled hidden>Select an Option</option>
             <option value="university of central florida">University of Central Florida</option>
@@ -72,17 +75,17 @@
             <option value="florida state university">FLorida State University</option>
             <option value="university of south florida">University of South Florida</option>
           </select>
-        </div> 
-      <div class="row">
-          
-       <!-- <button type="button" id="loginButton" class="buttons" onclick="doLogin();"> Log in </button> -->
-       <input type = "button" id = "registerButton" class = "buttons" onclick = "doRegister()" value = "Create Account">
-      </div>
-      <span id="RegisterResult"></span>
-      
-    </form>
-  </div> 
-  <!--
+        </div>
+        <div class="row">
+
+          <!-- <button type="button" id="loginButton" class="buttons" onclick="doLogin();"> Log in </button> -->
+          <input type="button" id="registerButton" class="buttons" onclick="doRegister()" value="Create Account">
+        </div>
+        <span class="error" id="RegisterResult"></span>
+
+      </form>
+    </div>
+    <!--
   <div class="username-r2h">
     <img class="envelope-closed-1-VrM" src="./assets/envelope-closed-1-tGM.png"/>
     <p class="email-username-aso">Email/Username</p>
@@ -107,5 +110,5 @@
     <p class="university-GNZ">University</p>
   </div>
   <p class="event-Aiq">Event</p> -->
-</div>
+  </div>
 </body>

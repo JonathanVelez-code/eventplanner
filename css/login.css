@@ -1,26 +1,33 @@
-
 html {
-	font-size:62.5%;
+  font-size: 62.5%;
 }
+
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
-ul, li {
-	list-style: none;
+
+ul,
+li {
+  list-style: none;
 }
+
 input {
-	border: none;
+  border: none;
 }
+
 body {
   width: 144rem;
-}.login-7sb {
+}
+
+.login-7sb {
   width: 100%;
   height: 102.4rem;
   position: relative;
   overflow: hidden;
   background-color: #ffffff;
 }
+
 .login-7sb .rectangle-1-Ce9 {
   width: 144rem;
   height: 9.4rem;
@@ -29,6 +36,7 @@ body {
   top: 0;
   background-color: #ffffff;
 }
+
 .login-7sb .rectangle-2-7WD {
   width: 144rem;
   height: 83rem;
@@ -37,6 +45,7 @@ body {
   top: 7.7rem;
   background-color: #f0f4fc;
 }
+
 .login-7sb .x683-1-E53 {
   width: 91.7rem;
   height: 59.1rem;
@@ -46,6 +55,7 @@ body {
   object-fit: cover;
   vertical-align: top;
 }
+
 .login-7sb .event-planner-wEM {
   width: 21.5rem;
   height: 4.7rem;
@@ -59,6 +69,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .login-7sb .login-Q7w {
   width: 8.6rem;
   height: 4.7rem;
@@ -72,6 +83,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .login-7sb .login-Udb {
   width: 12.1rem;
   height: 5.6rem;
@@ -90,6 +102,7 @@ body {
   background-color: #5882fd;
   border-radius: 1rem;
 }
+
 .login-7sb .home-iXw {
   width: 6.2rem;
   height: 3.1rem;
@@ -103,7 +116,8 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
-.login-7sb .login-nnh{
+
+.login-7sb .login-nnh {
   width: 5.8rem;
   height: 3.1rem;
   position: absolute;
@@ -117,6 +131,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .login-7sb .sign-up-g7P {
   width: 7.7rem;
   height: 3.1rem;
@@ -130,6 +145,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .login-7sb .forgot-my-password-9mf {
   width: 13.7rem;
   height: 2.1rem;
@@ -143,6 +159,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .login-7sb .not-a-member-sign-up-RDP {
   width: 16rem;
   height: 2.1rem;
@@ -156,6 +173,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .login-7sb .vector-1-hRo {
   width: 145.5rem;
   height: 29rem;
@@ -165,6 +183,7 @@ body {
   object-fit: contain;
   vertical-align: top;
 }
+
 .login-7sb .contact-QLD {
   width: 8.6rem;
   height: 3.1rem;
@@ -180,45 +199,49 @@ body {
 }
 
 .error {
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 1.28;
-    color: #5882fd;
-    position: relative;
-    left: 79.2rem; 
-    top: 16.6rem;
-  }
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #5882fd;
+  position: relative;
+  left: 79.2rem;
+  top: 16.6rem;
+}
+
 /* Style inputs, select elements and textareas */
-input[type=text], select, textarea{
-    
+input[type=text],
+select,
+textarea {
+
   box-sizing: border-box;
   padding: 1.221rem 8.7rem 0.6rem 1.193rem;
   width: 34.6rem;
   height: 5.1rem;
   position: relative;
-  left: 79.2rem; 
+  left: 79.2rem;
   top: 16.6rem;
   display: flex;
   align-items: center;
   border: solid 0.1rem #5882fd;
   background-color: #ffffff;
   margin-bottom: 10px;
-   
-  }
-  /* Style the container */
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+}
 
-  /* Style the submit button */
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the submit button */
 /* input[type=button] {
     width: 12.1rem;
     height: 5.6rem;
@@ -238,42 +261,58 @@ input[type=text], select, textarea{
     border-radius: 1rem;
   } */
 
-  .buttons{
-    width: 12.1rem;
-    height: 5.6rem;
-    position: absolute;
-    left: 81.2rem;
-    top: 47.3rem;
-    font-size: 1.7rem;
-    font-weight: 400;
-    line-height: 1.28;
-    color: #ffffff;
-    font-family: Alatsi, 'Source Sans Pro';
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #5882fd;
-    border-radius: 1rem;
-  }
+.buttons {
+  width: 12.1rem;
+  height: 5.6rem;
+  position: absolute;
+  left: 81.2rem;
+  top: 47.3rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #ffffff;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5882fd;
+  border-radius: 1rem;
+}
 
-  .signup{
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 1.28;
-    color: #5882fd;
-    position: relative;
-    background-color: transparent;
-    left: 79.2rem; 
-    top: 30.6rem;
-  }
-  /* button{
+.signup {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #5882fd;
+  position: relative;
+  background-color: transparent;
+  left: 79.2rem;
+  top: 30.6rem;
+}
+
+.header {
+  width: 7.7rem;
+  height: 3.1rem;
+  position: absolute;
+  left: 115.3rem;
+  top: 3.1rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #000000;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: transparent;
+}
+
+/* button{
     width: 200px;
     height: 30px;
     text-align: center;
   } */
 
-  /* input[type=button] {
+/* input[type=button] {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.28;
@@ -299,6 +338,7 @@ input[type=text], select, textarea{
   border: solid 0.1rem #5882fd;
   background-color: #ffffff;
 }
+
 .login-7sb .username-H97 .envelope-closed-1-Xp9 {
   margin: 0rem 4.193rem 0.421rem 0rem;
   width: 3.3146rem;
@@ -308,7 +348,8 @@ input[type=text], select, textarea{
   vertical-align: top;
   flex-shrink: 0;
 }
-.login-7sb .username-H97 .email-username-cqb  {
+
+.login-7sb .username-H97 .email-username-cqb {
   text-indent: 50px;
   margin-top: 0.1792rem;
   font-size: 2.4rem;
@@ -319,6 +360,7 @@ input[type=text], select, textarea{
   white-space: nowrap;
   flex-shrink: 0;
 }
+
 .login-7sb .password-6km {
   box-sizing: border-box;
   padding: 0.973rem 16rem 0.6rem 1.442rem;
@@ -332,6 +374,7 @@ input[type=text], select, textarea{
   border: solid 0.1rem #5882fd;
   background-color: #ffffff;
 }
+
 .login-7sb .password-6km .lock-close-1-mM7 {
   margin: 0rem 4.441rem 0.366rem 0rem;
   width: 2.817rem;
@@ -341,6 +384,7 @@ input[type=text], select, textarea{
   vertical-align: top;
   flex-shrink: 0;
 }
+
 .login-7sb .password-6km .password-4b7 {
   margin-top: 0.4268rem;
   font-size: 2.4rem;
@@ -351,6 +395,7 @@ input[type=text], select, textarea{
   white-space: nowrap;
   flex-shrink: 0;
 }
+
 .login-7sb .facebook-1-xAh {
   width: 3.0833rem;
   height: 3.0833rem;
@@ -360,6 +405,7 @@ input[type=text], select, textarea{
   object-fit: contain;
   vertical-align: top;
 }
+
 .login-7sb .twitter-1-3xq {
   width: 3.0833rem;
   height: 3.0833rem;
@@ -369,6 +415,7 @@ input[type=text], select, textarea{
   object-fit: contain;
   vertical-align: top;
 }
+
 .login-7sb .linkedin-1-AGm {
   width: 3.0833rem;
   height: 3.0833rem;
@@ -378,6 +425,7 @@ input[type=text], select, textarea{
   object-fit: contain;
   vertical-align: top;
 }
+
 .login-7sb .event-Fp1 {
   width: 5.9rem;
   height: 3.1rem;

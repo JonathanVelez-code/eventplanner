@@ -1,33 +1,26 @@
+
 html {
-  font-size: 62.5%;
+	font-size:62.5%;
 }
-
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
-
-ul,
-li {
-  list-style: none;
+ul, li {
+	list-style: none;
 }
-
 input {
-  border: none;
+	border: none;
 }
-
 body {
   width: 144rem;
-}
-
-.sign-up-ERK {
+}.sign-up-ERK {
   width: 100%;
   height: 102.4rem;
   position: relative;
   overflow: hidden;
   background-color: #ffffff;
 }
-
 .sign-up-ERK .rectangle-1-hph {
   width: 144rem;
   height: 9.4rem;
@@ -36,7 +29,6 @@ body {
   top: 0;
   background-color: #ffffff;
 }
-
 .sign-up-ERK .rectangle-2-cAy {
   width: 144rem;
   height: 83rem;
@@ -45,7 +37,6 @@ body {
   top: 7.7rem;
   background-color: #f0f4fc;
 }
-
 .sign-up-ERK .event-planner-vSZ {
   width: 21.5rem;
   height: 4.7rem;
@@ -59,7 +50,6 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
-
 .sign-up-ERK .sign-up-Pb3 {
   width: 11.8rem;
   height: 4.7rem;
@@ -73,7 +63,6 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
-
 .sign-up-ERK .create-account-GPw {
   width: 17.4rem;
   height: 5.6rem;
@@ -92,7 +81,6 @@ body {
   background-color: #5882fd;
   border-radius: 1rem;
 }
-
 .sign-up-ERK .rectangle-10-tRK {
   width: 10rem;
   height: 10rem;
@@ -101,7 +89,6 @@ body {
   top: 82.1rem;
   background-color: #d9d9d9;
 }
-
 .sign-up-ERK .home-Q8m {
   width: 6.2rem;
   height: 3.1rem;
@@ -115,12 +102,11 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
-
 .sign-up-ERK .login-gc5 {
   width: 5.8rem;
   height: 3.1rem;
   position: absolute;
-  left: 100.6rem;
+  left: 115.3rem;
   top: 3.1rem;
   font-size: 2.4rem;
   font-weight: 400;
@@ -129,12 +115,11 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
-
 .sign-up-ERK .sign-up-NUu {
   width: 7.7rem;
   height: 3.1rem;
   position: absolute;
-  left: 115.3rem;
+  left: 131.9rem;
   top: 3.1rem;
   font-size: 2.4rem;
   font-weight: 400;
@@ -144,7 +129,6 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
-
 .sign-up-ERK .vector-1-Sjf {
   width: 145.5rem;
   height: 29rem;
@@ -154,7 +138,6 @@ body {
   object-fit: contain;
   vertical-align: top;
 }
-
 .sign-up-ERK .contact-9ty {
   width: 8.6rem;
   height: 3.1rem;
@@ -170,38 +153,35 @@ body {
 }
 
 /* Style inputs, select elements and textareas */
-input[type=text],
-select,
-textarea {
-
-  box-sizing: border-box;
-  padding: 1.221rem 8.7rem 0.6rem 1.193rem;
-  width: 34.6rem;
-  height: 5.1rem;
-  position: relative;
-  left: 50.2rem;
-  top: 10.6rem;
-  display: flex;
-  align-items: center;
-  border: solid 0.1rem #5882fd;
-  background-color: #ffffff;
-  margin-bottom: 10px;
-
-}
-
-/* Style the container */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
+input[type=text], select, textarea{
+    
+    box-sizing: border-box;
+    padding: 1.221rem 8.7rem 0.6rem 1.193rem;
+    width: 34.6rem;
+    height: 5.1rem;
+    position: relative;
+    left: 50.2rem; 
+    top: 10.6rem;
+    display: flex;
+    align-items: center;
+    border: solid 0.1rem #5882fd;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+     
+    }
+    /* Style the container */
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+  
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  
 .sign-up-ERK .username-r2h {
   box-sizing: border-box;
   padding: 1.221rem 8.7rem 0.6rem 1.193rem;
@@ -215,7 +195,6 @@ textarea {
   border: solid 0.1rem #5882fd;
   background-color: #ffffff;
 }
-
 .sign-up-ERK .username-r2h .envelope-closed-1-VrM {
   margin: 0rem 4.193rem 0.421rem 0rem;
   width: 3.3146rem;
@@ -225,7 +204,6 @@ textarea {
   vertical-align: top;
   flex-shrink: 0;
 }
-
 .sign-up-ERK .username-r2h .email-username-aso {
   margin-top: 0.1792rem;
   font-size: 2.4rem;
@@ -236,7 +214,6 @@ textarea {
   white-space: nowrap;
   flex-shrink: 0;
 }
-
 .sign-up-ERK .password-Tgh {
   box-sizing: border-box;
   padding: 0.973rem 16rem 0.6rem 1.442rem;
@@ -250,7 +227,6 @@ textarea {
   border: solid 0.1rem #5882fd;
   background-color: #ffffff;
 }
-
 .sign-up-ERK .password-Tgh .lock-close-1-8H3 {
   margin: 0rem 4.441rem 0.366rem 0rem;
   width: 2.817rem;
@@ -260,7 +236,6 @@ textarea {
   vertical-align: top;
   flex-shrink: 0;
 }
-
 .sign-up-ERK .password-Tgh .password-oty {
   margin-top: 0.4268rem;
   font-size: 2.4rem;
@@ -271,7 +246,6 @@ textarea {
   white-space: nowrap;
   flex-shrink: 0;
 }
-
 .sign-up-ERK .facebook-1-hUZ {
   width: 3.0833rem;
   height: 3.0833rem;
@@ -281,7 +255,6 @@ textarea {
   object-fit: contain;
   vertical-align: top;
 }
-
 .sign-up-ERK .twitter-1-ziZ {
   width: 3.0833rem;
   height: 3.0833rem;
@@ -291,7 +264,6 @@ textarea {
   object-fit: contain;
   vertical-align: top;
 }
-
 .sign-up-ERK .linkedin-1-6mb {
   width: 3.0833rem;
   height: 3.0833rem;
@@ -301,7 +273,6 @@ textarea {
   object-fit: contain;
   vertical-align: top;
 }
-
 .sign-up-ERK .first-name-cE9 {
   box-sizing: border-box;
   padding: 1rem 14.9rem 1rem 1.768rem;
@@ -315,7 +286,6 @@ textarea {
   border: solid 0.1rem #5882fd;
   background-color: #ffffff;
 }
-
 .sign-up-ERK .first-name-cE9 .user-1-1-V33 {
   margin: 0.3rem 4.47rem 0rem 0rem;
   width: 2.462rem;
@@ -324,7 +294,6 @@ textarea {
   vertical-align: top;
   flex-shrink: 0;
 }
-
 .sign-up-ERK .first-name-cE9 .first-name-b65 {
   font-size: 2.4rem;
   font-weight: 400;
@@ -334,7 +303,6 @@ textarea {
   white-space: nowrap;
   flex-shrink: 0;
 }
-
 .sign-up-ERK .last-name-HDo {
   box-sizing: border-box;
   padding: 1rem 15.1rem 1rem 1.668rem;
@@ -348,7 +316,6 @@ textarea {
   border: solid 0.1rem #5882fd;
   background-color: #ffffff;
 }
-
 .sign-up-ERK .last-name-HDo .user-1-1-jrV {
   margin: 0.3rem 4.57rem 0rem 0rem;
   width: 2.462rem;
@@ -357,7 +324,6 @@ textarea {
   vertical-align: top;
   flex-shrink: 0;
 }
-
 .sign-up-ERK .last-name-HDo .last-name-DWm {
   font-size: 2.4rem;
   font-weight: 400;
@@ -367,7 +333,6 @@ textarea {
   white-space: nowrap;
   flex-shrink: 0;
 }
-
 .sign-up-ERK .university-76M {
   box-sizing: border-box;
   padding: 1rem 15.6rem 1rem 1.966rem;
@@ -381,7 +346,6 @@ textarea {
   border: solid 0.1rem #5882fd;
   background-color: #ffffff;
 }
-
 .sign-up-ERK .university-76M .arrow-up-down-1-mgh {
   margin: 0.448rem 4.066rem 0rem 0rem;
   width: 2.3677rem;
@@ -390,7 +354,6 @@ textarea {
   vertical-align: top;
   flex-shrink: 0;
 }
-
 .sign-up-ERK .university-76M .university-GNZ {
   font-size: 2.4rem;
   font-weight: 400;
@@ -400,7 +363,6 @@ textarea {
   white-space: nowrap;
   flex-shrink: 0;
 }
-
 .sign-up-ERK .event-Aiq {
   width: 5.9rem;
   height: 3.1rem;
@@ -417,87 +379,81 @@ textarea {
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+  .buttons{
+    width: 12.1rem;
+    height: 5.6rem;
+    position: absolute;
+    left: 62rem;
+    top: 70.3rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.28;
+    color: #ffffff;
+    font-family: Alatsi, 'Source Sans Pro';
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5882fd;
+    border-radius: 1rem;
+  }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
+  .signup{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.28;
+    color: #5882fd;
+    position: relative;
+    background-color: transparent;
+    left: 79.2rem; 
+    top: 30.6rem;
+  }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
-.buttons {
-  width: 12.1rem;
-  height: 5.6rem;
-  position: absolute;
-  left: 62rem;
-  top: 70.3rem;
-  font-size: 1.7rem;
-  font-weight: 400;
-  line-height: 1.28;
-  color: #ffffff;
-  font-family: Alatsi, 'Source Sans Pro';
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #5882fd;
-  border-radius: 1rem;
-}
-
-.signup {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.28;
-  color: #5882fd;
-  position: relative;
-  background-color: transparent;
-  left: 79.2rem;
-  top: 30.6rem;
-}
-
-.header {
-  width: 5.8rem;
+  .header{
+    width: 5.8rem;
   height: 3.1rem;
   position: absolute;
-  left: 100.6rem;
+  left: 115.3rem;
   top: 3.1rem;
   font-size: 2.4rem;
   font-weight: 400;
@@ -506,14 +462,14 @@ textarea {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
   background-color: transparent;
-}
+  }
 
-.error {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.28;
-  color: #5882fd;
-  position: relative;
-  left: 55.7rem;
-  top: 18.6rem;
-}
+  .error {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.28;
+    color: #5882fd;
+    position: relative;
+    left: 55.7rem; 
+    top: 18.6rem;
+  }

@@ -58,6 +58,8 @@ function doLogin()
 					return;
 				}
 
+
+
 				// breaks down the JSON we recieved and sets them to our variables.
 				username = jsonObject.username;
 				password = jsonObject.password;

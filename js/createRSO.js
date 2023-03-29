@@ -87,32 +87,31 @@ function saveCookie()
 
 
 // our function that adds users to the database and creates them a profile.
-function doRegister()
+function doCreateRSO()
 {
 
 // Init to 0 to prevent bugs
 userId = 0;
 
 // Pull the data receievd from the user to send to the API.
-let username = document.getElementById("user").value;
-let password = document.getElementById("pass").value;
-let firstName = document.getElementById("firstName").value;
-let lastName = document.getElementById("lastName").value;
-let university = document.getElementById("uni").value;
-let email = document.getElementById("email").value;
+let adminEmail = document.getElementById("adminEmail").value;
+let name = document.getElementById("rsoName").value;
+let emails = document.getElementById("memberEmail").value;
+let description = document.getElementById("description").value;
 
+var emailValues = emails.split(",");
 
 
 // Set the login result to blank to reset any previous messages.
 document.getElementById("RegisterResult").innerHTML = "";
 
 // the data set that gets sent to the API (php file)
-let tmp = {username: username, password:password, firstName:firstName, lastName:lastName, university: university, email: email };
+let tmp = {adminEmail: adminEmail, name: name, emails: emailValues, description: description };
 let jsonPayload = JSON.stringify( tmp );
 
 // This just assembles teh URL to allow this JS file to be used with differnet
 // API endpoints.
-let url = urlBase + 'LAMPAPI/register.' + extension;
+let url = urlBase + 'LAMPAPI/RSO.' + extension;
 
 let xhr = new XMLHttpRequest();
 xhr.open("POST", url, true);
@@ -130,13 +129,18 @@ try
 			// if the API returns 0, the username is taken!
 			if( userId == 0 )
 			{
-				document.getElementById("RegisterResult").innerHTML = "Username already exists! Please try another username!";
+				document.getElementById("RegisterResult").innerHTML = "RSO already exists! Please try another username!";
 				return;
 			}
 			// if the API returns -1, the user is attempting to send a NULL field.
 			if( userId == -1 )
 			{
 				document.getElementById("RegisterResult").innerHTML = "Please ensure all fields are filled out!";
+				return;
+			}
+            if( userId == -5 )
+			{
+				document.getElementById("RegisterResult").innerHTML = "Please enter at least 4 emails";
 				return;
 			}
 			// if the API returns -10, the server is down!

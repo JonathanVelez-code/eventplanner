@@ -1,5 +1,8 @@
 <?php
 
+	$inData = getRequestInfo();
+	$userid = $inData["userID"];
+
     //Connect to mySQL
 	$conn = new mysqli("localhost", "AdminUser", "cop4710Data@", "EventPlanner");
     if ($conn->connect_error)
@@ -8,6 +11,25 @@
     }
     else
 	{
+
+		//Get users university
+		$stmt = $conn->prepare("SELECT university FROM Users WHERE userID=?");
+		$stmt->bind_param("i", $userid);
+		$stmt->execute();
+		$result = $stmt->get_result();
+		$row = $result->fetch_assoc();
+		$university = $row['university'];
+		$stmt->close();
+	
+
+		// get all RSO's user is part of
+		$stmt = $conn->prepare("SELECT rsoID FROM Members WHERE userID=?");
+        $stmt->bind_param("i", $userid);
+        $stmt->execute();
+        $club = $stmt->get_result();
+		$stmt->close();
+
+
 
         // get events table
         $query = "SELECT * FROM Events";
@@ -24,7 +46,17 @@
 
         while ($row_events = $results->fetch_assoc()) {
             //output a row here
-            returnWithInfo($row_events['name'],$row_events['date'], $row_events['location'], $row_events['description']);
+
+			// output if event is public or same as users uni
+			if($row_events['access'] == "public" || $row_events['university'] == $university)
+            	returnWithInfo($row_events['name'],$row_events['date'], $row_events['location'], $row_events['description'], $row_events['category'], $row_events['access']);
+
+			// output if user is member of events club
+			while ($rso = $club->fetch_assoc()) {
+
+				if($row_events['rsoID'] == $rso['rsoID'])
+				 returnWithInfo($row_events['name'],$row_events['date'], $row_events['location'], $row_events['description'], $row_events['category'], $row_events['access']);
+			}
 
             $jsonObj[] = $row_events;
         }
@@ -34,6 +66,7 @@
 
         echo "</table>";
 
+		//$stmt->close();
 		$conn->close();
 	}
 
@@ -54,9 +87,9 @@
 	
 	//Return JSON to user with the users info
 	//PARAM: $firstName, $lastName, $id from database
-	function returnWithInfo( $name, $date, $location, $description )
+	function returnWithInfo( $name, $date, $location, $description, $category, $access )
 	{
-		$retValue = '{"name":"' . $name . '","location":"' . $location . '","date":"' . $date . '","description":"' . $description . '","error":""}';
+		$retValue = '{"name":"' . $name . '","location":"' . $location . '","access":"' . $access . '","date":"' . $date . '","description":"' . $description . '","category":"' . $category . '","error":""}';
 		sendResultInfoAsJson( $retValue );
 	}
 	

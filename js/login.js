@@ -78,6 +78,68 @@ function doLogin()
 
 }
 
+function joinRSO()
+{
+
+document.getElementById("RegisterResult").innerHTML = "reached";
+// Pull the data receievd from the user to send to the API.
+let name = document.getElementById("rso").value;
+
+// Set the login result to blank to reset any previous messages.
+document.getElementById("RegisterResult").innerHTML = "";
+
+// the data set that gets sent to the API (php file)
+let tmp = {userID:userId, name: name};
+let jsonPayload = JSON.stringify( tmp );
+
+// This just assembles teh URL to allow this JS file to be used with differnet
+// API endpoints.
+let url = urlBase + '/joinRSO.' + extension;
+
+let xhr = new XMLHttpRequest();
+xhr.open("POST", url, true);
+xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+try
+{
+	xhr.onreadystatechange = function()
+	{
+		console.log(xhr.responseText);
+		if (this.readyState == 4 && this.status == 200)
+		{
+			let jsonObject = JSON.parse( xhr.responseText );
+			console.log(jsonObject);
+			userId = jsonObject.id;
+			// if the API returns 0, the username is taken!
+			if( userId == 0 )
+			{
+				document.getElementById("RegisterResult").innerHTML = "Username already exists! Please try another username!";
+				return;
+			}
+			// if the API returns -1, the user is attempting to send a NULL field.
+			if( userId == -1 )
+			{
+				document.getElementById("RegisterResult").innerHTML = "Please ensure all fields are filled out!";
+				return;
+			}
+			// if the API returns -10, the server is down!
+			if( userId == -10 )
+			{
+				document.getElementById("RegisterResult").innerHTML = "Server not responding";
+				return;
+			}
+			window.location.href = "index.html";
+		}
+	};
+	xhr.send(jsonPayload);
+}
+catch(err)
+{
+	document.getElementById("loginResult").innerHTML = err.message;
+}
+}
+
+
+
 // Function to save the cookies and remeber certain peices of data.
 function saveCookie()
 {
@@ -163,6 +225,7 @@ function logOut()
 	document.cookie = "firstName= ; expires = Thu, 01 Jan 1970 00:00:00 GMT";
 	window.location.href = "index.html";
 }
+
 
 function readCookie()
 {

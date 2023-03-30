@@ -53,6 +53,8 @@
         //holds all info of each event
         $final_res = json_encode($jsonObj);
 
+
+        //echo $final_res['rsoID'];
 		//$stmt->close();
 		$conn->close();
 	}

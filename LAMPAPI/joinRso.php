@@ -6,6 +6,7 @@ $inData = getRequestInfo();
 $userID = $inData['userID'];
 $name = $inData['name'];
 
+
 //Connect to mySQL
 $conn = new mysqli('localhost', 'AdminUser', 'cop4710Data@', 'EventPlanner');
 
@@ -28,19 +29,21 @@ if ($conn->connect_error) {
         $stmt->bind_param('ii', $userID, $rsoID);
         $stmt->execute();
 
-        $stmt = $conn->prepare('SELECT MembersID FROM Members WHERE rsoID=?');
+        $stmt = $conn->prepare("SELECT MembersID FROM Members WHERE rsoID=?");
         $stmt->bind_param('i', $rsoID);
         $stmt->execute();
         $result = $stmt->get_result();
 
         if ($result->num_rows >= 5) {
-            $numChange = 0; //initialize the $numChange variable
+            //$numChange = 0; //initialize the $numChange variable
             $stmt = $conn->prepare(
-                'UPDATE RSO SET activation = ? WHERE rsoID= ?'
+                "UPDATE RSO SET activation = 1 WHERE rsoID= ?"
             );
-            $stmt->bind_param('ii', $numChange, $rsoID);
+            //$stmt->bind_param('ii', $numChange, $rsoID);
+            $stmt->bind_param('i', $rsoID);
             $stmt->execute();
-            print 'active';
+            returnWithInfo($userID, $name);
+            //print 'active';
         }
     } else {
         //RSO name does not exist
@@ -50,6 +53,12 @@ if ($conn->connect_error) {
     $stmt->close();
     $conn->close();
 }
+
+function returnWithInfo($userid, $name)
+	{
+		$retValue = '{"userID":' . $userid . ',"name":"' . $name . '","error":""}';
+		sendResultInfoAsJson( $retValue );
+	}
 
 //Get JSON from client, return as object
 function getRequestInfo()

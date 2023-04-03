@@ -58,7 +58,8 @@
 
             // checks that at least 4 member emails have been input
             if ($i < 4) {
-                returnWithError( 0, "Must enter at least 4 member emails");
+
+                returnWithError( -1, "Must enter at least 4 member emails." . $i);
                 die();
             }
 

@@ -8,7 +8,40 @@ let firstName = "";
 let lastName = "";
 let contactId = 0;
 
+//idk
+function sendCookie() 
+{
+	// get the user ID from the cookie
+	getCookieID();
 
+	console.log(userId);
+
+	// create an XMLHttpRequest object
+	const xhr = new XMLHttpRequest();
+
+	// specify the PHP file URL and request method
+	const url = 'http://eventsplanneruni.com/deleteRSO.php';
+	const method = 'POST';
+	xhr.open(method, url, true);
+
+	// set the request headers
+	xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+	// set up the request body data
+	const data = `userid=${encodeURIComponent(userId)}`;
+
+	// define the callback function to handle the response
+	xhr.onreadystatechange = function() {
+	if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+		// handle the response data here
+		console.log(this.responseText);
+	}
+	};
+
+	// send the request
+	xhr.send(data);
+
+}
 // Login in function that performs the login verification.
 function doLogin()
 {
@@ -50,6 +83,7 @@ function doLogin()
 				let jsonObject = JSON.parse( xhr.responseText );
 				// userId is the key that corresponds to each of our registered users
 				userId = jsonObject.id;
+				
 
 				// If the API returns < 1, the combo either doesnt exist or is wrong!
 				if( userId < 1 )
@@ -65,8 +99,9 @@ function doLogin()
 				password = jsonObject.password;
 
 				saveCookie();
+				sendCookie();
 				// take us to the landing page! We are Logged in!
-				window.location.href = "index.html";
+				window.location.href = "deleteRSO.php";
 			}
 		};
 		xhr.send(jsonPayload);
@@ -81,20 +116,27 @@ function doLogin()
 function joinRSO()
 {
 
-document.getElementById("RegisterResult").innerHTML = "reached";
+getCookieID();
+
+	
 // Pull the data receievd from the user to send to the API.
 let name = document.getElementById("rso").value;
 
+
+
 // Set the login result to blank to reset any previous messages.
 document.getElementById("RegisterResult").innerHTML = "";
+//document.getElementById("RegisterResult").innerHTML = userId;
+
+//return;
 
 // the data set that gets sent to the API (php file)
-let tmp = {userID:userId, name: name};
+let tmp = {userID: userId, name: name};
 let jsonPayload = JSON.stringify( tmp );
 
 // This just assembles teh URL to allow this JS file to be used with differnet
 // API endpoints.
-let url = urlBase + '/joinRSO.' + extension;
+let url = urlBase + 'LAMPAPI/joinRso.' + extension;
 
 let xhr = new XMLHttpRequest();
 xhr.open("POST", url, true);
@@ -127,7 +169,7 @@ try
 				document.getElementById("RegisterResult").innerHTML = "Server not responding";
 				return;
 			}
-			window.location.href = "index.html";
+			window.location.href = "login.html";
 		}
 	};
 	xhr.send(jsonPayload);
@@ -147,6 +189,7 @@ function saveCookie()
 	let date = new Date();
 	date.setTime(date.getTime()+(minutes*60*1000));
 	document.cookie = "firstName=" + firstName + ",lastName=" + lastName + ",userId=" + userId + ";expires=" + date.toGMTString();
+	document.cookie = "userid=" + userId + "; path=/; domain=eventsplanneruni.com";
 }
 
 
@@ -226,6 +269,27 @@ function logOut()
 	window.location.href = "index.html";
 }
 
+function getCookieID() {
+	let data = document.cookie;
+	let splits = data.split(",");
+	for(var i = 0; i < splits.length; i++)
+	{
+        let thisOne = splits[i].trim();
+        let tokens = thisOne.split("=");
+        if( tokens[0] == "firstName" )
+        {
+            firstName = tokens[1];
+        }
+        else if( tokens[0] == "lastName" )
+        {
+            lastName = tokens[1];
+        }
+        else if( tokens[0] == "userId" )
+        {
+            userId = parseInt( tokens[1].trim() );
+        }
+    }
+}
 
 function readCookie()
 {

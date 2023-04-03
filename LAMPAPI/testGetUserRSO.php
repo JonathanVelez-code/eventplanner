@@ -1,9 +1,17 @@
 <?php
 
-	$inData = getRequestInfo();
+
+	//$inData = getRequestInfo();
 	//$userid = $inData["userID"];
 
-	$userid = $inData["userID"];
+	$userid = $_POST['userid'];
+
+    var_dump($_POST);
+    //$userid = 1;
+
+    echo "test";
+    echo $userid;
+    echo "test";
 
     //Connect to mySQL
 	$conn = new mysqli("localhost", "AdminUser", "cop4710Data@", "EventPlanner");
@@ -16,7 +24,7 @@
 	
 		// get all RSO id's user is part of
 		$stmt = $conn->prepare("SELECT rsoID FROM Members WHERE userID=?");
-        $stmt->bind_param("s", $userid);
+        $stmt->bind_param("i", $userid);
         $stmt->execute();
         $club = $stmt->get_result();
 		$stmt->close();
@@ -82,7 +90,7 @@
 	{
 		//$retValue = '{"name":"' . $name . '","rsoID":"' . $rsoID .  '","error":""}';
 		//sendResultInfoAsJson( $retValue );
-		echo '<button id="rso_button_' . $rsoID . '">' . $name . '</button>';
+		echo '<button style="margin-right: 10px;" button id="rso_button_' . $rsoID . '">' . $name . '</button>';
 	}
 	
 	//Return JSON to user with an error message

@@ -83,6 +83,20 @@ html {
     font-family: Alatsi, 'Source Sans Pro';
     white-space: nowrap;
   }
+
+  .login-7sb .login-123 {
+    width: 8.6rem;
+    height: 4.7rem;
+    position: absolute;
+    left: 50.2rem;
+    top: 25.1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.28;
+    color: #000000;
+    font-family: Alatsi, 'Source Sans Pro';
+    white-space: nowrap;
+  }
   
   .login-7sb .login-Udb {
     width: 12.1rem;
@@ -266,6 +280,27 @@ html {
     height: 5.6rem;
     position: absolute;
     left: 60.2rem;
+    top: 47.3rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.28;
+    color: #ffffff;
+    font-family: Alatsi, 'Source Sans Pro';
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5882fd;
+    border-radius: 1rem;
+  }
+
+  .RSO {
+    z-index: 289;
+    margin-top:10px;
+    width: 12.1rem;
+    height: 5.6rem;
+    position: relative;
+    left: 50rem; /* Pushes the button to the right */
     top: 47.3rem;
     font-size: 1.7rem;
     font-weight: 400;

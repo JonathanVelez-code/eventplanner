@@ -1,17 +1,17 @@
+
 <?php
 
 
 	//$inData = getRequestInfo();
 	//$userid = $inData["userID"];
 
-	$userid = $_POST['userid'];
+	$userid = $_COOKIE['userid'];
 
-    var_dump($_POST);
+    $flag = 0;
+
+    //var_dump($_POST);
     //$userid = 1;
 
-    echo "test";
-    echo $userid;
-    echo "test";
 
     //Connect to mySQL
 	$conn = new mysqli("localhost", "AdminUser", "cop4710Data@", "EventPlanner");
@@ -55,8 +55,11 @@
 
                 returnWithInfo($row['name'],$row['rsoID']);
                 $jsonObj[] = $row;
+
+                $flag = 1;
             }
         }
+
 
         $jsonObj = array();
 
@@ -90,17 +93,19 @@
 	{
 		//$retValue = '{"name":"' . $name . '","rsoID":"' . $rsoID .  '","error":""}';
 		//sendResultInfoAsJson( $retValue );
-		echo '<button style="margin-right: 10px;" button id="rso_button_' . $rsoID . '">' . $name . '</button>';
+		//echo '<button style="margin-right: 10px;" button id="rso_button_' . $rsoID . '">' . $name . '</button>';
+        echo '<button class="RSO" id="rso_button_' . $rsoID . '" onclick="sendRSOName(\'' . $name . '\')">' . $name . '</button>';
+        
 	}
 	
 	//Return JSON to user with an error message
 	//PARAM: $errID - the ID of the specific error
 	//       $errSTR - a message describing the error, mostly for debugging
-	function returnWithError($errID ,$errSTR )
-	{
-		$retValue = '{"userID":"' . $errID . '","firstName":"","lastName":"","error":"' . $errSTR . '"}';
-		sendResultInfoAsJson( $retValue );
-	}
+	function returnWithError($err)
+{
+    $retValue = '{"id":0,"error":"' . $err . '"}';
+    sendResultInfoAsJson($retValue);
+}
 	
 	
 ?>

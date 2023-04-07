@@ -1,0 +1,182 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+input {
+  border: none;
+}
+
+body {
+  width: 144rem;
+}
+
+.home-page-1fR {
+  box-sizing: border-box;
+  padding: 2.5rem 0rem 26.5rem 0rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.home-page-1fR .auto-group-7ufq-gmZ {
+  margin: 0rem 4rem 0.3rem 5.1rem;
+  width: calc(100% - 9.1rem);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.home-page-1fR .auto-group-7ufq-gmZ .event-planner-XXH {
+  margin-right: 43.8rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.2799999449;
+  color: #000000;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.home-page-1fR .auto-group-7ufq-gmZ .event-pmH {
+  margin: 0.1rem 9.1rem 0rem 0rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2799999714;
+  color: #000000;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.home-page-1fR .auto-group-7ufq-gmZ .home-vZR {
+  margin: 0.1rem 8.9rem 0rem 0rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2799999714;
+  text-decoration-line: underline;
+  color: #000000;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.home-page-1fR .auto-group-7ufq-gmZ .login-ch9 {
+  margin: 0.1rem 8.9rem 0rem 0rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2799999714;
+  color: #000000;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.home-page-1fR .auto-group-7ufq-gmZ .sign-up-KrT {
+  margin: 0.1rem 9rem 0rem 0rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2799999714;
+  color: #000000;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.home-page-1fR .auto-group-7ufq-gmZ .contact-ETd {
+  margin-top: 0.1rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2799999714;
+  color: #000000;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.home-page-1fR .auto-group-6uv3-WR9 {
+  width: 100%;
+  height: 68.5rem;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.home-page-1fR .auto-group-6uv3-WR9 .rectangle-7-zr7 {
+  width: 144rem;
+  height: 35.7rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #f0f4fc;
+}
+
+.home-page-1fR .auto-group-6uv3-WR9 .vector-2-X5M {
+  width: 146.3rem;
+  height: 34.2rem;
+  position: absolute;
+  left: 0;
+  top: 34.3rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+
+.home-page-1fR .auto-group-6uv3-WR9 .check-out-upcoming-events-SCK {
+  width: 68.3rem;
+  height: 7.7rem;
+  position: absolute;
+  left: 38.1rem;
+  top: 14rem;
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: 1.2799999237;
+  letter-spacing: -0.12rem;
+  color: #4c7bff;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+}
+
+.home-page-1fR .auto-group-6uv3-WR9 .view-and-plan-events-join-different-rsos-rate-and-review-u5u {
+  width: 22.2rem;
+  height: 11.1rem;
+  position: absolute;
+  left: 61.1rem;
+  top: 27.2rem;
+  text-align: center;
+  font-size: 3.1rem;
+  font-weight: 400;
+  line-height: 1.2800000098;
+  color: #4f618e;
+  font-family: Alatsi, 'Source Sans Pro';
+}
+
+.home-page-1fR .auto-group-6uv3-WR9 .login-8DZ {
+  width: 16.2rem;
+  height: 7.4975rem;
+  position: absolute;
+  left: 63.8rem;
+  top: 56.8rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2799999714;
+  color: #ffffff;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5882fd;
+  border-radius: 1.3388rem;
+}

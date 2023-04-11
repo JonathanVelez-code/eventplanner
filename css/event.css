@@ -1,20 +1,26 @@
-
 html {
-	font-size:62.5%;
+  font-size: 62.5%;
 }
+
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
-ul, li {
-	list-style: none;
+
+ul,
+li {
+  list-style: none;
 }
+
 input {
-	border: none;
+  border: none;
 }
+
 body {
   width: 144rem;
-}.event-page-5P1 {
+}
+
+.event-page-5P1 {
   box-sizing: border-box;
   padding: 2.1rem 0rem 6.658rem 0rem;
   width: 100%;
@@ -25,6 +31,7 @@ body {
   flex-direction: column;
   background-color: #ffffff;
 }
+
 .event-page-5P1 .auto-group-dr5q-Y1h {
   margin: 0rem 6rem 0.6rem 11.6rem;
   width: calc(100% - 17.6rem);
@@ -32,6 +39,7 @@ body {
   align-items: flex-start;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-dr5q-Y1h .event-planner-1vs {
   margin-right: 97.6rem;
   font-size: 3.6rem;
@@ -42,6 +50,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-dr5q-Y1h .logout-4eF {
   font-size: 2.4rem;
   font-weight: 400;
@@ -51,6 +60,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH {
   margin-bottom: 5.0583rem;
   box-sizing: border-box;
@@ -62,6 +72,7 @@ body {
   background-color: #f0f4fc;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .check-out-upcoming-events-pmq {
   margin: 0rem 1.195rem 7.7rem 0rem;
   font-size: 4.8rem;
@@ -73,6 +84,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-mrwz-fXZ {
   margin: 0rem 39.1rem 6.6rem 38.005rem;
   width: calc(100% - 77.1048rem);
@@ -81,8 +93,9 @@ body {
   align-items: center;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-mrwz-fXZ .create-event-M9V {
-  margin-right: 23.9rem;
+  margin-right: 4.1rem;
   width: 15.4rem;
   height: 100%;
   font-size: 1.7rem;
@@ -98,6 +111,25 @@ body {
   border-radius: 1rem;
   flex-shrink: 0;
 }
+
+.event-page-5P1 .auto-group-rtrk-AhH .auto-group-mrwz-fXZ .create-event-f9k {
+  margin-right: 4.4rem;
+  width: 15.4rem;
+  height: 100%;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #ffffff;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5882fd;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-mrwz-fXZ .create-event-wtP {
   width: 15.4rem;
   height: 100%;
@@ -114,6 +146,7 @@ body {
   border-radius: 1rem;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 {
   margin-bottom: 9.588rem;
   width: 100%;
@@ -122,6 +155,7 @@ body {
   align-items: center;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event4-VHd {
   margin: 0rem 4.774rem 0rem 0rem;
   box-sizing: border-box;
@@ -133,6 +167,7 @@ body {
   border-radius: 0.7301rem;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event4-VHd .mask-group-Mqd {
   margin-bottom: 0.9735rem;
   width: 29.3265rem;
@@ -141,6 +176,7 @@ body {
   object-fit: contain;
   vertical-align: top;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event4-VHd .name-s3H {
   margin-bottom: 2.3675rem;
   width: 100%;
@@ -152,12 +188,14 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event4-VHd .auto-group-ljdy-9mV {
   margin-left: 0.9735rem;
   width: 7.7rem;
   height: 6.5807rem;
   position: relative;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event4-VHd .auto-group-ljdy-9mV .hosted-by-47m {
   width: 7.4rem;
   height: 2.2rem;
@@ -171,6 +209,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event4-VHd .auto-group-ljdy-9mV .location-jmd {
   width: 6.4rem;
   height: 2.2rem;
@@ -184,6 +223,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event4-VHd .auto-group-ljdy-9mV .date-time-nzo {
   width: 7.7rem;
   height: 2.2rem;
@@ -197,6 +237,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event3-Pjh {
   margin: 0rem 4.784rem 0rem 0rem;
   box-sizing: border-box;
@@ -208,6 +249,7 @@ body {
   border-radius: 0.7301rem;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event3-Pjh .mask-group-Sxs {
   margin-bottom: 0.9735rem;
   width: 29.3265rem;
@@ -216,6 +258,7 @@ body {
   object-fit: contain;
   vertical-align: top;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event3-Pjh .name-MK9 {
   margin-bottom: 2.3675rem;
   width: 100%;
@@ -227,12 +270,14 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event3-Pjh .auto-group-dzqk-T7H {
   margin-left: 0.9735rem;
   width: 7.7rem;
   height: 6.5807rem;
   position: relative;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event3-Pjh .auto-group-dzqk-T7H .hosted-by-A1h {
   width: 7.4rem;
   height: 2.2rem;
@@ -246,6 +291,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event3-Pjh .auto-group-dzqk-T7H .location-E1Z {
   width: 6.4rem;
   height: 2.2rem;
@@ -259,6 +305,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event3-Pjh .auto-group-dzqk-T7H .date-time-6Jf {
   width: 7.7rem;
   height: 2.2rem;
@@ -272,6 +319,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event2-WNP {
   margin: 0rem 4.694rem 0.012rem 0rem;
   box-sizing: border-box;
@@ -283,6 +331,7 @@ body {
   border-radius: 0.7301rem;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event2-WNP .mask-group-aNF {
   margin-bottom: 0.9731rem;
   width: 29.5948rem;
@@ -291,6 +340,7 @@ body {
   object-fit: contain;
   vertical-align: top;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event2-WNP .name-feb {
   margin-bottom: 2.3657rem;
   width: 100%;
@@ -302,12 +352,14 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event2-WNP .auto-group-zgwm-y9V {
   margin-left: 0.9824rem;
   width: 7.7rem;
   height: 6.5791rem;
   position: relative;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event2-WNP .auto-group-zgwm-y9V .hosted-by-3f9 {
   width: 7.4rem;
   height: 2.2rem;
@@ -321,6 +373,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event2-WNP .auto-group-zgwm-y9V .location-8gb {
   width: 6.4rem;
   height: 2.2rem;
@@ -334,6 +387,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event2-WNP .auto-group-zgwm-y9V .date-time-RQo {
   width: 7.7rem;
   height: 2.2rem;
@@ -347,6 +401,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event1-qUX {
   margin: 0rem 0rem 0.012rem 0rem;
   box-sizing: border-box;
@@ -358,6 +413,7 @@ body {
   border-radius: 0.7301rem;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event1-qUX .mask-group-vF5 {
   margin-bottom: 0.9731rem;
   width: 29.3056rem;
@@ -366,6 +422,7 @@ body {
   object-fit: contain;
   vertical-align: top;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event1-qUX .name-dQP {
   margin-bottom: 2.3657rem;
   width: 100%;
@@ -377,12 +434,14 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event1-qUX .auto-group-vfsy-LJo {
   margin-left: 0.9728rem;
   width: 7.7rem;
   height: 6.5791rem;
   position: relative;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event1-qUX .auto-group-vfsy-LJo .hosted-by-SMq {
   width: 7.4rem;
   height: 2.2rem;
@@ -396,6 +455,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event1-qUX .auto-group-vfsy-LJo .location-vXu {
   width: 6.4rem;
   height: 2.2rem;
@@ -409,6 +469,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-u6h1-ne7 .event1-qUX .auto-group-vfsy-LJo .date-time-zXm {
   width: 7.7rem;
   height: 2.2rem;
@@ -422,6 +483,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT {
   margin-bottom: 7.888rem;
   width: 100%;
@@ -430,6 +492,7 @@ body {
   align-items: center;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event4-vpj {
   margin: 0rem 4.774rem 0rem 0rem;
   box-sizing: border-box;
@@ -441,6 +504,7 @@ body {
   border-radius: 0.7301rem;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event4-vpj .mask-group-CGT {
   margin-bottom: 0.9735rem;
   width: 29.3265rem;
@@ -449,6 +513,7 @@ body {
   object-fit: contain;
   vertical-align: top;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event4-vpj .name-6Mq {
   margin-bottom: 2.3675rem;
   width: 100%;
@@ -460,12 +525,14 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event4-vpj .auto-group-xtjf-C9y {
   margin-left: 0.9735rem;
   width: 7.7rem;
   height: 6.5807rem;
   position: relative;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event4-vpj .auto-group-xtjf-C9y .hosted-by-WAf {
   width: 7.4rem;
   height: 2.2rem;
@@ -479,6 +546,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event4-vpj .auto-group-xtjf-C9y .location-ypw {
   width: 6.4rem;
   height: 2.2rem;
@@ -492,6 +560,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event4-vpj .auto-group-xtjf-C9y .date-time-4rP {
   width: 7.7rem;
   height: 2.2rem;
@@ -505,6 +574,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event3-tKd {
   margin: 0rem 4.784rem 0rem 0rem;
   box-sizing: border-box;
@@ -516,6 +586,7 @@ body {
   border-radius: 0.7301rem;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event3-tKd .mask-group-AY3 {
   margin-bottom: 0.9735rem;
   width: 29.3265rem;
@@ -524,6 +595,7 @@ body {
   object-fit: contain;
   vertical-align: top;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event3-tKd .name-sxF {
   margin-bottom: 2.3675rem;
   width: 100%;
@@ -535,12 +607,14 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event3-tKd .auto-group-dfor-BCF {
   margin-left: 0.9735rem;
   width: 7.7rem;
   height: 6.5807rem;
   position: relative;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event3-tKd .auto-group-dfor-BCF .hosted-by-Uh9 {
   width: 7.4rem;
   height: 2.2rem;
@@ -554,6 +628,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event3-tKd .auto-group-dfor-BCF .location-k8s {
   width: 6.4rem;
   height: 2.2rem;
@@ -567,6 +642,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event3-tKd .auto-group-dfor-BCF .date-time-CFm {
   width: 7.7rem;
   height: 2.2rem;
@@ -580,6 +656,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event2-DRm {
   margin: 0rem 4.694rem 0.012rem 0rem;
   box-sizing: border-box;
@@ -591,6 +668,7 @@ body {
   border-radius: 0.7301rem;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event2-DRm .mask-group-HgX {
   margin-bottom: 0.9731rem;
   width: 29.5948rem;
@@ -599,6 +677,7 @@ body {
   object-fit: contain;
   vertical-align: top;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event2-DRm .name-ntB {
   margin-bottom: 2.3657rem;
   width: 100%;
@@ -610,12 +689,14 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event2-DRm .auto-group-yfmm-6P5 {
   margin-left: 0.9824rem;
   width: 7.7rem;
   height: 6.5791rem;
   position: relative;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event2-DRm .auto-group-yfmm-6P5 .hosted-by-QPm {
   width: 7.4rem;
   height: 2.2rem;
@@ -629,6 +710,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event2-DRm .auto-group-yfmm-6P5 .location-JV9 {
   width: 6.4rem;
   height: 2.2rem;
@@ -642,6 +724,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event2-DRm .auto-group-yfmm-6P5 .date-time-axT {
   width: 7.7rem;
   height: 2.2rem;
@@ -655,6 +738,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event1-RTH {
   margin: 0rem 0rem 0.012rem 0rem;
   box-sizing: border-box;
@@ -666,6 +750,7 @@ body {
   border-radius: 0.7301rem;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event1-RTH .mask-group-hvb {
   margin-bottom: 0.9731rem;
   width: 29.3056rem;
@@ -674,6 +759,7 @@ body {
   object-fit: contain;
   vertical-align: top;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event1-RTH .name-De3 {
   margin-bottom: 2.3657rem;
   width: 100%;
@@ -685,12 +771,14 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event1-RTH .auto-group-4upb-i51 {
   margin-left: 0.9728rem;
   width: 7.7rem;
   height: 6.5791rem;
   position: relative;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event1-RTH .auto-group-4upb-i51 .hosted-by-25h {
   width: 7.4rem;
   height: 2.2rem;
@@ -704,6 +792,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event1-RTH .auto-group-4upb-i51 .location-gR9 {
   width: 6.4rem;
   height: 2.2rem;
@@ -717,6 +806,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-g6no-2UT .event1-RTH .auto-group-4upb-i51 .date-time-Zzj {
   width: 7.7rem;
   height: 2.2rem;
@@ -730,6 +820,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR {
   margin-bottom: 4.288rem;
   width: 100%;
@@ -737,6 +828,7 @@ body {
   align-items: flex-end;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event4-XKH {
   margin: 0rem 4.774rem 0.2rem 0rem;
   box-sizing: border-box;
@@ -747,6 +839,7 @@ body {
   border-radius: 0.7301rem;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event4-XKH .mask-group-1VM {
   margin-bottom: 0.9735rem;
   width: 29.3265rem;
@@ -755,6 +848,7 @@ body {
   object-fit: contain;
   vertical-align: top;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event4-XKH .name-Wwu {
   margin-bottom: 2.3675rem;
   width: 100%;
@@ -766,12 +860,14 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event4-XKH .auto-group-4xnp-RJB {
   margin-left: 0.9735rem;
   width: 7.7rem;
   height: 6.5807rem;
   position: relative;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event4-XKH .auto-group-4xnp-RJB .hosted-by-io5 {
   width: 7.4rem;
   height: 2.2rem;
@@ -785,6 +881,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event4-XKH .auto-group-4xnp-RJB .location-Qvo {
   width: 6.4rem;
   height: 2.2rem;
@@ -798,6 +895,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event4-XKH .auto-group-4xnp-RJB .date-time-VST {
   width: 7.7rem;
   height: 2.2rem;
@@ -811,6 +909,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event3-KAb {
   margin-right: 4.7835rem;
   box-sizing: border-box;
@@ -821,6 +920,7 @@ body {
   border-radius: 0.7301rem;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event3-KAb .mask-group-cvP {
   margin-bottom: 0.9735rem;
   width: 29.3265rem;
@@ -829,6 +929,7 @@ body {
   object-fit: contain;
   vertical-align: top;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event3-KAb .name-iiX {
   margin-bottom: 2.3675rem;
   width: 100%;
@@ -840,12 +941,14 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event3-KAb .auto-group-ne8j-DfH {
   margin-left: 0.9735rem;
   width: 7.7rem;
   height: 6.5807rem;
   position: relative;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event3-KAb .auto-group-ne8j-DfH .hosted-by-vZh {
   width: 7.4rem;
   height: 2.2rem;
@@ -859,6 +962,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event3-KAb .auto-group-ne8j-DfH .location-Py5 {
   width: 6.4rem;
   height: 2.2rem;
@@ -872,6 +976,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event3-KAb .auto-group-ne8j-DfH .date-time-t99 {
   width: 7.7rem;
   height: 2.2rem;
@@ -885,6 +990,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event2-7nb {
   margin: 0rem 4.694rem 0.012rem 0rem;
   box-sizing: border-box;
@@ -895,6 +1001,7 @@ body {
   border-radius: 0.7301rem;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event2-7nb .mask-group-bxf {
   margin-bottom: 0.9731rem;
   width: 29.5948rem;
@@ -903,6 +1010,7 @@ body {
   object-fit: contain;
   vertical-align: top;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event2-7nb .name-hko {
   margin-bottom: 2.3657rem;
   width: 100%;
@@ -914,12 +1022,14 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event2-7nb .auto-group-sroh-oYw {
   margin-left: 0.9824rem;
   width: 7.7rem;
   height: 6.5791rem;
   position: relative;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event2-7nb .auto-group-sroh-oYw .hosted-by-7Jj {
   width: 7.4rem;
   height: 2.2rem;
@@ -933,6 +1043,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event2-7nb .auto-group-sroh-oYw .location-PGF {
   width: 6.4rem;
   height: 2.2rem;
@@ -946,6 +1057,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event2-7nb .auto-group-sroh-oYw .date-time-Gaw {
   width: 7.7rem;
   height: 2.2rem;
@@ -959,6 +1071,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event1-g8s {
   margin-bottom: 0.012rem;
   box-sizing: border-box;
@@ -969,6 +1082,7 @@ body {
   border-radius: 0.7301rem;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event1-g8s .mask-group-ytf {
   margin-bottom: 0.9731rem;
   width: 29.3056rem;
@@ -977,6 +1091,7 @@ body {
   object-fit: contain;
   vertical-align: top;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event1-g8s .name-go5 {
   margin-bottom: 2.3657rem;
   width: 100%;
@@ -988,12 +1103,14 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event1-g8s .auto-group-f34p-PSb {
   margin-left: 0.9728rem;
   width: 7.7rem;
   height: 6.5791rem;
   position: relative;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event1-g8s .auto-group-f34p-PSb .hosted-by-tu9 {
   width: 7.4rem;
   height: 2.2rem;
@@ -1007,6 +1124,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event1-g8s .auto-group-f34p-PSb .location-BdM {
   width: 6.4rem;
   height: 2.2rem;
@@ -1020,6 +1138,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .auto-group-slbu-bwR .event1-g8s .auto-group-f34p-PSb .date-time-Tqm {
   width: 7.7rem;
   height: 2.2rem;
@@ -1033,6 +1152,7 @@ body {
   font-family: Alatsi, 'Source Sans Pro';
   white-space: nowrap;
 }
+
 .event-page-5P1 .auto-group-rtrk-AhH .item-1-2-3--s8o {
   margin-left: 3.2048rem;
   font-size: 3.1rem;
@@ -1043,6 +1163,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-unbm-KFh {
   margin-right: 4.4583rem;
   display: flex;
@@ -1050,6 +1171,7 @@ body {
   align-items: center;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-unbm-KFh .facebook-2-Drs {
   width: 3.0833rem;
   height: 3.0833rem;
@@ -1058,6 +1180,7 @@ body {
   vertical-align: top;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-unbm-KFh .twitter-2-vWP {
   width: 3.0833rem;
   height: 3.0833rem;
@@ -1066,6 +1189,7 @@ body {
   vertical-align: top;
   flex-shrink: 0;
 }
+
 .event-page-5P1 .auto-group-unbm-KFh .linkedin-2-E1H {
   width: 3.0833rem;
   height: 3.0833rem;

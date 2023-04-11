@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <script type="text/javascript" src="js/createRSO.js"></script>
   <meta charset="utf-8" />
@@ -7,63 +8,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <title>Create RSO Page</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi%3A400"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400"/>
-  <link rel="stylesheet" href="./css/create-rso-page.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi%3A400" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400" />
+  <link rel="stylesheet" href="./css/create-rso-page.css" />
 </head>
+
 <body>
-<div class="create-rso-page-k3f">
-  <div class="auto-group-hhu7-Sx5">
-    <div class="rectangle-1-95o">
-    </div>
-    <div class="rectangle-2-rku">
-    </div>
-    <p class="event-planner-NjF">Event Planner</p>
-    <p class="enter-rso-details-dv5">
-    Enter RSO Details
-    <br/>
-    
-    </p>
-    <input type="button" id="headerButton" class="header" onclick="window.location.href='index.html';" value="Home">
+  <div class="create-rso-page-k3f">
+    <div class="auto-group-hhu7-Sx5">
+      <div class="rectangle-1-95o">
+      </div>
+      <div class="rectangle-2-rku">
+      </div>
+      <p class="event-planner-NjF">Event Planner</p>
+      <p class="enter-rso-details-dv5">
+        Enter RSO Details
+        <br />
 
-    <div class="container">
-      <!-- FORM -->
-      <form id="register" method="get" action="register.php">
-        <div class="row">
-          <div class="col-75">
-            <input type="text" id="rsoName" name="rsoName" placeholder="RSO name..">
-          </div>
-        </div>
-        <br><br>
-        <div class="row">
-          <div class="col-75">
-            <input type="text" id="adminEmail" name="adminEmail" placeholder="Admin email..">
-          </div>
-        </div>
-        <br><br>
-        <span class="warning"> Enter minimum of four emails separated by commas</span>
-        <div class="row">
-          <div class="col-75">
-            <input type="text" id="memberEmail" name="memberEmail" placeholder="Member email.." multiple><br><br>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-75">
-            <input type="text" id="description" name="Description" placeholder="description..">
-          </div>
-        </div>
-        <br><br>
-        <div class="row">
+      </p>
+      <input type="button" id="headerButton" class="header" onclick="window.location.href='home.html';" value="Logout">
 
-          <!-- <button type="button" id="loginButton" class="buttons" onclick="doLogin();"> Log in </button> -->
-          <input type="button" id="registerButton" class="buttons" onclick="doCreateRSO()" value="Submit">
-        </div>
-        <span class="error" id="RegisterResult"></span>
+      <div class="container">
+        <!-- FORM -->
+        <form id="register" method="get" action="register.php">
+          <div class="row">
+            <div class="col-75">
+              <input type="text" id="rsoName" name="rsoName" placeholder="RSO name..">
+            </div>
+          </div>
+          <br><br>
+          <div class="row">
+            <div class="col-75">
+              <input type="text" id="adminEmail" name="adminEmail" placeholder="Admin email..">
+            </div>
+          </div>
+          <br><br>
+          <span class="warning"> Enter minimum of four emails separated by commas</span>
+          <div class="row">
+            <div class="col-75">
+              <input type="text" id="memberEmail" name="memberEmail" placeholder="Member email.." multiple><br><br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-75">
+              <input type="text" id="description" name="Description" placeholder="description..">
+            </div>
+          </div>
+          <br><br>
+          <div class="row">
 
-      </form>
-    </div>
+            <!-- <button type="button" id="loginButton" class="buttons" onclick="doLogin();"> Log in </button> -->
+            <input type="button" id="registerButton" class="buttons" onclick="doCreateRSO()" value="Submit">
+          </div>
+          <span class="error" id="RegisterResult"></span>
 
-    <!--
+        </form>
+      </div>
+
+      <!--
     <div class="username-iEh">RSO Name</div>
     <div class="username-w7T">Member Emails</div>
     <div class="username-x2Z">Admin Email</div>
@@ -78,6 +80,6 @@
     <img class="facebook-1-m3s" src="./assets/facebook-1-1WD.png"/>
     <img class="twitter-1-5aM" src="./assets/twitter-1-p7X.png"/>
     <img class="linkedin-1-b2u" src="./assets/linkedin-1-vAh.png"/> -->
+    </div>
   </div>
-</div>
 </body>

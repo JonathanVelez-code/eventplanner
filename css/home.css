@@ -75,7 +75,7 @@ body {
   flex-shrink: 0;
 }
 
-.home-page-1fR .auto-group-7ufq-gmZ .login-ch9 {
+.home-page-1fR .auto-group-7ufq-gmZ .home-ch9 {
   margin: 0.1rem 8.9rem 0rem 0rem;
   font-size: 2.4rem;
   font-weight: 400;
@@ -86,7 +86,7 @@ body {
   flex-shrink: 0;
 }
 
-.home-page-1fR .auto-group-7ufq-gmZ .sign-up-KrT {
+.home-page-1fR .auto-group-7ufq-gmZ .login-KrT {
   margin: 0.1rem 9rem 0rem 0rem;
   font-size: 2.4rem;
   font-weight: 400;
@@ -97,7 +97,7 @@ body {
   flex-shrink: 0;
 }
 
-.home-page-1fR .auto-group-7ufq-gmZ .contact-ETd {
+.home-page-1fR .auto-group-7ufq-gmZ .sign-up-ETd {
   margin-top: 0.1rem;
   font-size: 2.4rem;
   font-weight: 400;
@@ -180,49 +180,4 @@ body {
   justify-content: center;
   background-color: #5882fd;
   border-radius: 1.3388rem;
-}
-
-.buttons {
-  width: 12.1rem;
-  height: 5.6rem;
-  position: absolute;
-  left: 81.2rem;
-  top: 47.3rem;
-  font-size: 1.7rem;
-  font-weight: 400;
-  line-height: 1.28;
-  color: #ffffff;
-  font-family: Alatsi, 'Source Sans Pro';
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #5882fd;
-  border-radius: 1rem;
-}
-
-.signup {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.28;
-  color: #5882fd;
-  position: relative;
-  background-color: transparent;
-  left: 79.2rem;
-  top: 30.6rem;
-}
-
-.header {
-  width: 7.7rem;
-  height: 3.1rem;
-  position: absolute;
-  left: 131.9rem;
-  top: 3.1rem;
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 1.28;
-  color: #000000;
-  font-family: Alatsi, 'Source Sans Pro';
-  white-space: nowrap;
-  background-color: transparent;
 }

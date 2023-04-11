@@ -1,0 +1,403 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+input {
+  border: none;
+}
+
+body {
+  width: 144rem;
+}
+
+.create-event-page-ZzK {
+  box-sizing: border-box;
+  padding-bottom: 4.3583rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D {
+  margin-bottom: 4.2583rem;
+  width: 144.1rem;
+  height: 90.7rem;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .rectangle-1-sdd {
+  width: 144rem;
+  height: 9.4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .rectangle-2-Asd {
+  width: 144rem;
+  height: 83rem;
+  position: absolute;
+  left: 0;
+  top: 7.7rem;
+  background-color: #f0f4fc;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .event-planner-fpP {
+  width: 21.5rem;
+  height: 4.7rem;
+  position: absolute;
+  left: 12.5rem;
+  top: 2.4rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #000000;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .enter-event-details-7RV {
+  width: 29.5rem;
+  height: 4.7rem;
+  position: absolute;
+  left: 54.7rem;
+  top: 15.2rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #000000;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .login-BRM {
+  width: 12.1rem;
+  height: 5.6rem;
+  position: absolute;
+  left: 115.6rem;
+  top: 74.2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #ffffff;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5882fd;
+  border-radius: 1rem;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .home-ztb {
+  width: 6.2rem;
+  height: 3.1rem;
+  position: absolute;
+  left: 85.5rem;
+  top: 3.1rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #000000;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .login-4tT {
+  width: 5.8rem;
+  height: 3.1rem;
+  position: absolute;
+  left: 100.6rem;
+  top: 3.1rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #000000;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .sign-up-9Q7 {
+  width: 7.7rem;
+  height: 3.1rem;
+  position: absolute;
+  left: 115.3rem;
+  top: 3.1rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #000000;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .logout-pm9 {
+  width: 8.6rem;
+  height: 3.1rem;
+  position: absolute;
+  left: 131.9rem;
+  top: 3.1rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #000000;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .username-VcP {
+  box-sizing: border-box;
+  padding: 1rem 4.1rem;
+  width: 34.6rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 9.8rem;
+  top: 28.9rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #404040;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  border: solid 0.1rem #5882fd;
+  background-color: #ffffff;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .username-GmZ {
+  box-sizing: border-box;
+  padding: 1rem 4.1rem;
+  width: 34.6rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 9.8rem;
+  top: 40.7rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #404040;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  border: solid 0.1rem #5882fd;
+  background-color: #ffffff;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .username-EM1 {
+  box-sizing: border-box;
+  padding: 1rem 4.1rem;
+  width: 34.6rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 50.9rem;
+  top: 40.7rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #404040;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  border: solid 0.1rem #5882fd;
+  background-color: #ffffff;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .username-e9q {
+  box-sizing: border-box;
+  padding: 1rem 4.1rem;
+  width: 34.6rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 9.8rem;
+  top: 52.5rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #404040;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  border: solid 0.1rem #5882fd;
+  background-color: #ffffff;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .username-Tsy {
+  box-sizing: border-box;
+  padding: 1rem 4.1rem;
+  width: 34.6rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 50.9rem;
+  top: 52.5rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #404040;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  border: solid 0.1rem #5882fd;
+  background-color: #ffffff;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .username-GKd {
+  box-sizing: border-box;
+  padding: 1rem 4.1rem;
+  width: 34.6rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 50.9rem;
+  top: 28.9rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #404040;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  border: solid 0.1rem #5882fd;
+  background-color: #ffffff;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .username-t67 {
+  box-sizing: border-box;
+  padding: 1rem 4.1rem;
+  width: 34.6rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 93.1rem;
+  top: 28.9rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #404040;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  border: solid 0.1rem #5882fd;
+  background-color: #ffffff;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .line-1-6T5 {
+  width: 117.8rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 10.4rem;
+  top: 25.5rem;
+  background-color: #000000;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .username-PSB {
+  box-sizing: border-box;
+  padding: 1rem 4.1rem;
+  width: 54.6rem;
+  height: 16.4rem;
+  position: absolute;
+  left: 9.8rem;
+  top: 63.4rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #404040;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  border: solid 0.1rem #5882fd;
+  background-color: #ffffff;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .username-C8j {
+  width: 24.5rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 93.1rem;
+  top: 52.5rem;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #404040;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 0.1rem #5882fd;
+  box-sizing: border-box;
+  background-color: #ececec;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .username-1M5 {
+  box-sizing: border-box;
+  padding: 1rem 4.1rem;
+  width: 34.6rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 93.1rem;
+  top: 40.7rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #404040;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+  border: solid 0.1rem #5882fd;
+  background-color: #ffffff;
+}
+
+.create-event-page-ZzK .auto-group-sasm-27D .event-b4P {
+  width: 5.9rem;
+  height: 3.1rem;
+  position: absolute;
+  left: 70.1rem;
+  top: 3.1rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.28;
+  color: #000000;
+  font-family: Alatsi, 'Source Sans Pro';
+  white-space: nowrap;
+}
+
+.create-event-page-ZzK .auto-group-hpyq-3SB {
+  margin-right: 2.6583rem;
+  display: flex;
+  column-gap: 3.7167rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.create-event-page-ZzK .auto-group-hpyq-3SB .facebook-1-X6T {
+  width: 3.0833rem;
+  height: 3.0833rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+
+.create-event-page-ZzK .auto-group-hpyq-3SB .twitter-1-2Z1 {
+  width: 3.0833rem;
+  height: 3.0833rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+
+.create-event-page-ZzK .auto-group-hpyq-3SB .linkedin-1-u71 {
+  width: 3.0833rem;
+  height: 3.0833rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}

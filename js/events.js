@@ -29,7 +29,29 @@ function displayEvents() {
 
     xhr.onload = () => {
         if (xhr.readyState == 4 && xhr.status == 200) {
-            console.log(JSON.parse(xhr.responseText));
+            let events = JSON.parse(xhr.responseText);
+            let num = events.length;
+            // Loop through each div element and update its content
+            for (let i = 0; i < events.length; i++) {
+                let name = events[i].name;
+                let divId = "name" + (i + 1);
+                document.getElementById(divId).innerHTML = name;
+            }
+            for (let i = 0; i < events.length; i++) {
+                let name = events[i].date;
+                let divId = "date" + (i + 1);
+                document.getElementById(divId).innerHTML = name;
+            }
+            for (let i = 0; i < events.length; i++) {
+                let name = events[i].location;
+                let divId = "location" + (i + 1);
+                document.getElementById(divId).innerHTML = name;
+            }
+            for (let i = 0; i < events.length; i++) {
+                let name = events[i].hostRSO;
+                let divId = "hosted" + (i + 1);
+                document.getElementById(divId).innerHTML = name;
+            }
         } else {
             console.log(`Error: ${xhr.status}`);
         }

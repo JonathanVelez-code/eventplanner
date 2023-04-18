@@ -50,6 +50,8 @@ if ($conn->connect_error) {
                 'description' => $row_events['description'],
                 'category' => $row_events['category'],
                 'access' => $row_events['access'],
+                'hostRSO' => $row_events['hostRSO'],
+                'university' => $row_events['university'],
             ];
         }
 
@@ -63,6 +65,8 @@ if ($conn->connect_error) {
                     'description' => $row_events['description'],
                     'category' => $row_events['category'],
                     'access' => $row_events['access'],
+                    'hostRSO' => $row_events['hostRSO'],
+                    'university' => $row_events['university'],
                 ];
             }
         }
